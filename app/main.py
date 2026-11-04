@@ -25,7 +25,7 @@ def create_app(test_config=None):
 
     @app.get("/")
     def index():
-        return jsonify(service="cloud-tasks-api", message="API de tarefas em nuvem", endpoints=["/health", "/tasks", "/version"])
+        return jsonify(service="cloud-tasks-api", message="API de tarefas em nuvem v2", endpoints=["/health", "/tasks", "/version"])
 
     @app.get("/health")
     def health():
